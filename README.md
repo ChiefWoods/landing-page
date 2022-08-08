@@ -1,2 +1,3 @@
-# Landing-Page
-The Odin Project
+# Landing Page
+
+Product landing page for The Odin Project
