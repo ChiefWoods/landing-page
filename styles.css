@@ -85,7 +85,7 @@ header {
 
 #hero-image {
   align-self: center;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   width: 35%;
   height: auto;
 }
