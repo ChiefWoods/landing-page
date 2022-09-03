@@ -1,3 +1,3 @@
-# odin-landing-page
+# Landing Page
 
-Project on landing page
+Project for The Odin Project
