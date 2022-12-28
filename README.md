@@ -1,3 +1,3 @@
 # Landing Page
 
-Project for The Odin Project
+Product landing page for The Odin Project
