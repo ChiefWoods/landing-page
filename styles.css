@@ -1,263 +1,214 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
-:root {
-  overflow-x: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  box-sizing: border-box;
+  --github-black: #0D1117;
+  --dark-cyan-blue: #1F2937;
+  --quote-grey: #e5e7eb;
+  --bright-blue: #3882f6;
+  --white: #f9faf8;
+  font-family: Roboto, sans-serif;
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+  min-height: 100vh;
+  min-width: calc(100vw - (100vw - 100%));
 }
-
-.container {
-  padding: 0 15%;
-}
-
-/* Header */
 
 header {
-  background-color: #1F2937;
-}
-
-#container-header {
-  padding: 20px 15% 0px;
+  background-color: var(--dark-cyan-blue);
   display: flex;
   justify-content: space-between;
+  padding: 16px 15% 0;
+  gap: 15px;
 }
 
-#logo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  color: #f9faf8;
-  font-weight: bold;
-}
-
-#header-right {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.header-link {
-  font-size: 18px;
-  color: #e5e7eb;
+a {
   text-decoration: none;
 }
 
-/* First section of main */
-
-#section1 {
-  background-color: #1F2937;
+.logo {
+  font-size: 24px;
+  color: var(--white);
 }
 
-#container1 {
-  padding: 100px 15%;
+nav {
   display: flex;
+  gap: 25px;
 }
 
-#section1-left {
-  flex-basis: 50%;
-}
-
-#hero-main {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 48px;
-  font-weight: bolder;
-  color: #f9faf8;
-  margin: 0;
-}
-
-#hero-secondary {
-  margin: 12px 0;
-  font-family: Roboto, sans-serif;
+nav > a {
   font-size: 18px;
-  font-weight: 100;
-  color: #e5e7eb;
+  color: var(--quote-grey);
 }
 
-#sign-up1 {
-  background-color: #3882f6;
-  color: #f9faf8;
-  border-radius: 7px;
-  padding: 5px 25px;
-  font-family: Roboto, sans-serif;
-  font-weight: bolder;
+main {
+  flex: 1;
 }
 
-#hero-image {
-  align-self: center;
-  margin: 0 0 0 auto;
-  width: max(300px, 35%);
-  height: auto;
+main > section {
+  padding-inline: 15%;
 }
 
-/* Second section of main */
-
-#info-title {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 36px;
-  font-weight: bolder;
-  color: #1f2937;
-  text-align: center;
-  margin-block: 45px;
-}
-
-#info-main {
+.hero {
   display: flex;
-  gap: 40px;
-  margin-bottom: 100px;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  gap: 20px;
+  padding-block: 80px;
+  background-color: var(--dark-cyan-blue);
 }
 
-.info-content {
+.container-hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--white);
+  flex: 1;
+}
+
+.container-hero > h1 {
+  font-size: 48px;
+}
+
+.container-hero > p {
+  font-size: 18px;
+  color: var(--quote-grey);
+}
+
+button {
+  background-color: var(--bright-blue);
+  padding: 6px 10px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  border: 1px solid var(--bright-blue);
+  border-radius: 6px;
+  width: 120px;
+}
+
+.hero > img {
+  height: 275px;
+  flex: 1;
+  align-self: center;
+}
+
+.promise {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.info-image {
-  max-width: 150px;
-  height: auto;
-  border: 4px solid #3882f6;
+.promise > h2 {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--dark-cyan-blue);
+  padding-block: 40px;
+}
+
+.container-promise {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.container-promise > figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  gap: 10px;
+}
+
+.container-promise img {
+  min-width: 125px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 4px solid var(--bright-blue);
   border-radius: 12px;
 }
 
-.info-content p {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  font-weight: 900;
+.container-promise figcaption {
+  margin: 0;
+  text-align: justify;
+  font-size: 18px;
   color: grey;
-  margin-top: 12px;
-  width: 150px;
-  text-align: center;
-  line-height: 17px;
+  padding-inline: 7px;
 }
 
-/* Third section of main */
-
-#section3 {
-  padding-block: 100px;
-  background-color: #e5e7eb;
+.quote {
+  background-color: var(--quote-grey);
+  padding: 80px 25%;
 }
 
-#container3 {
-  padding: 0px;
-  width: 50%;
-  margin: 0 auto;
-}
-
-#section3 figure {
+.quote > figure {
   display: flex;
   flex-direction: column;
 }
 
-blockquote {
-  margin: 0;
+.quote blockquote {
   font-size: 36px;
-  font-weight: lighter;
+  font-weight: 300;
   font-style: italic;
-  color: #1F2937;
+  color: var(--dark-cyan-blue);
+  text-align: justify;
 }
 
-figcaption {
-  margin-inline: auto 50px;
-  margin-top: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  font-size: 22px;
-}
-
-/* Fourth section of main */
-
-#section4 {
-  padding: 75px 0;
-}
-
-#container4 {
-  margin: 0 15%;
-  padding: 0;
-  background-color: #3882f6;
-  border-radius: 6px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#action-left {
-  margin: 35px 0;
-}
-
-#action-left h4 {
-  font-family: Arial, Helvetica, sans-serif;
+.quote figcaption {
   font-size: 24px;
-  font-weight: light;
-  color: #f9faf8;
+  font-weight: 600;
   margin: 0;
+  align-self: flex-end;
 }
 
-#action-left p {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  font-weight: 900;
-  color: #f9faf8;
-  margin: 0;
+.order {
+  background-color: var(--bright-blue);
+  margin: 80px 15%;
+  border-radius: 6px;
+  padding: 50px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
-#sign-up2 {
-  background-color: #3882f6;
-  color: #f9faf8;
-  border-radius: 7px;
-  border-color: #f9faf8;
-  border-style: solid;
-  padding: 5px 25px;
-  font-family: Roboto, sans-serif;
-  font-weight: bolder;
-  align-self: center;
+.container-order > h2 {
+  color: var(--white);
+  font-size: 24px;
 }
 
-/* Footer */
-
-.copyright-footer {
-  background-color: #1f2937 ;
-  text-align: center;
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  color: #f9faf8;
-  padding: 30px;
+.container-order > p {
+  color: var(--quote-grey);
+  font-size: 16px;
 }
 
-.github-footer {
-  height: 55px;
-  width: 100vw;
+.order > button {
+  border: 3px solid var(--quote-grey);
+}
+
+footer {
   display: flex;
   align-items: center;
-  background-color: #0D1117;
+  background-color: var(--dark-cyan-blue);
+  padding: 12px 40px;
 }
 
 .made-by {
-  color: white;
-  font-size: 15px;
+  font-size: 12px;
   font-family: cursive;
+  color: white;
   margin: 0 auto;
 }
 
-.github-link {
-  position: relative;
-  right: 37.5px;
-}
-
 .github-icon {
-  height: 27.5px;
+  height: 25px;
 }

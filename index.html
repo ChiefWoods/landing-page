@@ -1,90 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Garlic Roasted Chicken Rice</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garlic Roasted Chicken Rice</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-<body>
-  <header>
-    <div class="container" id="container-header">
-      <span id="logo">Garlic Roasted Chicken Rice</span>
-      <div id="header-right">
-        <a class="header-link" href="#">About</a>
-        <a class="header-link" href="#">Menu</a>
-        <a class="header-link" href="#">Contact</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section id="section1">
-      <div class="container" id="container1">
-        <div id="section1-left">
-          <h1 id="hero-main">We sell out every single day.</h1>
-          <p id="hero-secondary">We're not kidding. Allow us to show you why.</p>
-          <button id="sign-up1">Get Fed</button>
+  <body>
+    <header>
+      <a href="#" class="logo">Garlic Roasted Chicken Rice</a>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container-hero">
+          <h1>We sell out every single day.</h1>
+          <p>We're not kidding. Allow us to show you why.</p>
+          <button>Get Fed</button>
         </div>
-        <img id="hero-image" src="images/Chicken Rice.jpg" alt="Scrambled Eggs">
-      </div>
-    </section>
-
-    <section id="section2">
-      <div class="container">
-        <h2 id="info-title">Our Promise To You</h2>
-        <div id="info-main">
-          <figure class="info-content">
-            <img class="info-image" src="images/Roasted Chicken.jpg" alt="Roasted chicken hanging by the stall display">
-            <p>Free-range birds roasted Hainanese style every morning before we open shop, guaranteeing a succulent
-              bite.</p>
+        <img src="./images/chicken_rice.jpg" alt="Chicken rice">
+      </section>
+      <section class="promise">
+        <h2>Our Promise To You.</h2>
+        <div class="container-promise">
+          <figure>
+            <img src="./images/roast_chicken.jpg" alt="Roast chicken">
+            <figcaption>Free-range birds roasted Hainanese style every morning before we open shop.</figcaption>
           </figure>
-          <figure class="info-content">
-            <img class="info-image" src="images/Fragant Rice.jpg" alt="Bowl of fragant white rice">
-            <p>We prepare our rice using stock collected from chicken roastings, giving it an unparalled fragrance.</p>
+          <figure>
+            <img src="./images/fragant_rice.jpg" alt="Fragant rice">
+            <figcaption>Rice prepared using stock collected from chicken roastings, giving it an unparalled fragrance.
+            </figcaption>
           </figure>
-          <figure class="info-content">
-            <img class="info-image" src="images/Chili Sauce.jpg" alt="Small plate of vinegar chili sauce">
-            <p>Our homemade vinegar chili dippings are made with just the right amount of tang and spicyness.</p>
+          <figure>
+            <img src="./images/chili_sauce.jpg" alt="Chili sauce">
+            <figcaption>Homemade vinegar chili dip, made with the right amount of tang and spicyness.</figcaption>
           </figure>
         </div>
-      </div>
-    </section>
-
-    <section id="section3">
-      <div class="container" id="container3">
+      </section>
+      <section class="quote">
         <figure>
           <blockquote>Their chicken rice is synonymous with my exes. I just can't get enough of them.</blockquote>
-          <figcaption>- Chii Yuen</figcaption>
+          <figcaption>- Jeffrey Wingman</figcaption>
         </figure>
-      </div>
-    </section>
-
-    <section id="section4">
-      <div class="container" id="container4">
-        <div id="action-left">
-          <h4>People will just not stop queuing at our shop.</h4>
+      </section>
+      <section class="order">
+        <div class="container-order">
+          <h2>People will just not stop queuing at our shop.</h2>
           <p>That's why we're accepting online orders too.</p>
         </div>
-        <button id="sign-up2">Cluck Up</button>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="copyright-footer">
-      <span>Copyright &copy; Woods 2022</span>
-    </div>
-    <div class="github-footer">
-      <span class="made-by">Made by ChiefWoods</span>
-      <a class="github-link" href="https://github.com/ChiefWoods/landing-page" target="_blank"><img src="./icons/github.svg"
-          class="github-icon" alt="icon of GitHub">
+        <button>Get Clucked</button>
+      </section>
+    </main>
+    <footer>
+      <span class="made-by">Copyright @
+        <script>document.write(new Date().getFullYear())</script> ChiefWoods
+      </span>
+      <a class="github-link" href="https://github.com/ChiefWoods/landing-page" target="_blank">
+        <img src="./icons/github.svg" class="github-icon" alt="GitHub">
       </a>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 
 </html>
