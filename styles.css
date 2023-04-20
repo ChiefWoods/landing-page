@@ -7,12 +7,13 @@
 }
 
 html {
+  font-size: 62.5%;
+  font-family: Roboto, sans-serif;
   --github-black: #0D1117;
   --dark-cyan-blue: #1F2937;
   --quote-grey: #e5e7eb;
   --bright-blue: #3882f6;
-  --white: #f9faf8;
-  font-family: Roboto, sans-serif;
+  --white-green: #f9faf8;
 }
 
 body {
@@ -21,6 +22,8 @@ body {
   min-height: 100vh;
   min-width: calc(100vw - (100vw - 100%));
 }
+
+/* Header */
 
 header {
   background-color: var(--dark-cyan-blue);
@@ -35,8 +38,8 @@ a {
 }
 
 .logo {
-  font-size: 24px;
-  color: var(--white);
+  font-size: 2.4rem;
+  color: var(--white-green);
 }
 
 nav {
@@ -45,9 +48,11 @@ nav {
 }
 
 nav > a {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: var(--quote-grey);
 }
+
+/* Main */
 
 main {
   flex: 1;
@@ -56,6 +61,8 @@ main {
 main > section {
   padding-inline: 15%;
 }
+
+/* Hero */
 
 .hero {
   display: flex;
@@ -69,16 +76,16 @@ main > section {
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
-  color: var(--white);
+  color: var(--white-green);
   flex: 1;
 }
 
 .container-hero > h1 {
-  font-size: 48px;
+  font-size: 4.8rem;
 }
 
 .container-hero > p {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: var(--quote-grey);
 }
 
@@ -86,19 +93,25 @@ button {
   background-color: var(--bright-blue);
   padding: 6px 10px;
   font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--white-green);
   border: 1px solid var(--bright-blue);
   border-radius: 6px;
   width: 120px;
 }
 
 .hero > img {
+  width: 100%;
+  min-width: 375px;
   height: 275px;
+  min-height: 250px;
   flex: 1;
   align-self: center;
+  object-fit: cover;
 }
+
+/* Promise */
 
 .promise {
   display: flex;
@@ -107,7 +120,7 @@ button {
 }
 
 .promise > h2 {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 900;
   color: var(--dark-cyan-blue);
   padding-block: 40px;
@@ -130,8 +143,7 @@ button {
 }
 
 .container-promise img {
-  min-width: 125px;
-  width: 100%;
+  width: 170px;
   aspect-ratio: 1 / 1;
   border: 4px solid var(--bright-blue);
   border-radius: 12px;
@@ -140,10 +152,12 @@ button {
 .container-promise figcaption {
   margin: 0;
   text-align: justify;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: grey;
-  padding-inline: 7px;
+  padding-inline: 12px;
 }
+
+/* Quote */
 
 .quote {
   background-color: var(--quote-grey);
@@ -153,10 +167,11 @@ button {
 .quote > figure {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .quote blockquote {
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 300;
   font-style: italic;
   color: var(--dark-cyan-blue);
@@ -164,11 +179,13 @@ button {
 }
 
 .quote figcaption {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
   margin: 0;
   align-self: flex-end;
 }
+
+/* Order */
 
 .order {
   background-color: var(--bright-blue);
@@ -182,18 +199,21 @@ button {
 }
 
 .container-order > h2 {
-  color: var(--white);
-  font-size: 24px;
+  color: var(--white-green);
+  font-size: 2.4rem;
 }
 
 .container-order > p {
   color: var(--quote-grey);
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .order > button {
   border: 3px solid var(--quote-grey);
+  min-width: max-content;
 }
+
+/* Footer */
 
 footer {
   display: flex;
@@ -211,4 +231,53 @@ footer {
 
 .github-icon {
   height: 25px;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 67.5%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero > img {
+    min-height: 250px;
+  }
+
+  .promise {
+    padding-inline: 7%;
+  }
+
+  .container-promise {
+    gap: 25px;
+  }
+
+  .quote {
+    padding-inline: 17%;
+  }
+
+  .order {
+    flex-direction: column;
+  }
+
+  .order > button {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 72.5%;
+  }
+
+  .container-promise {
+    flex-direction: column;
+    align-items: center;
+  }
 }
